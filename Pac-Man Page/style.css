@@ -1,27 +1,88 @@
-.intro{
+html, body 
+{
+  background: #FDE92F;
+}
+
+
+/*top part*/
+.intro
+{
+  width: 83%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
-  padding: 20px 0;
+  position: relative; 
 }
+
 
 .intro-pic{
-  width: 80%;
+  width: 100%;
   height: auto;
   display: block;
+  border:solid;
+  border-color: #02509A;
+}
+.intro-vid{
+  position: absolute;
+  top: 15%;
+  left: 4.5%;
+  width: 40%;
+}
+.vid{
+  aspect-ratio: 16 / 9;
+  position: relative;
 }
 
+.vid iframe{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: solid;
+  border-color: #02509A;
+
+}
+
+
 .store{
+  position:absolute;
+  left: 55%;
+  bottom: 2%;
  display: flex;
  align-items: center;
- justify-content: center;
- gap: 10px;
+ gap: 1%;
 }
 
 
 .badge{
-  height: 100px;
-  width: auto;
+  height: auto;
+  width: 87%;
   display: block;
 } 
+/*top part*/
+
+
+.battle
+{
+  width: 83%;
+  margin: auto;
+  display: grid;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.battle-txt
+{
+  background: #02509A;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.battle-txt h2
+{
+  font-size: 32px;
+}
