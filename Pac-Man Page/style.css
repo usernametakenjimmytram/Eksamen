@@ -1,88 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
 html, body 
 {
-  background: #FDE92F;
+  background: #FFF915;
 }
 
-
-/*top part*/
-.intro
+/*Top Video Intro*/
+.top-video
 {
-  width: 83%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative; 
-}
-
-
-.intro-pic{
   width: 100%;
-  height: auto;
-  display: block;
-  border:solid;
-  border-color: #02509A;
-}
-.intro-vid{
-  position: absolute;
-  top: 15%;
-  left: 4.5%;
-  width: 40%;
-}
-.vid{
-  aspect-ratio: 16 / 9;
+  background: #000;
   position: relative;
 }
 
-.vid iframe{
+.top-video-frame
+{
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.top-video-frame iframe
+{
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  border: solid;
-  border-color: #02509A;
+}
+/*Top Video Intro*/
 
+
+
+/*Top CTA*/
+.top-cta
+{
+  background-color: none;
+  text-align: center;
+  margin: 70px auto;
 }
 
-
-.store{
-  position:absolute;
-  left: 55%;
-  bottom: 2%;
- display: flex;
- align-items: center;
- gap: 1%;
+.top-cta-txt{
+  color: #000;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
 }
 
+.top-cta-badges{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
 
 .badge{
-  height: auto;
-  width: 87%;
+  height:75px;
+  width: auto;
   display: block;
-} 
-/*top part*/
+}
+/*Top CTA*/
 
 
+
+/*Game Battle*/
 .battle
 {
-  width: 83%;
-  margin: auto;
+  width: 80%;
+  margin: 70px auto;
   display: grid;
-  gap: 10px;
+  grid-template-columns: 1fr 2fr;
   align-items: stretch;
+  border: solid 5px #0691E7;
+  border-radius: 30px;
+  color: #000000;
+  overflow: hidden;
 }
 
 .battle-txt
 {
-  background: #02509A;
-  color: #fff;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: DotGothic16;
 }
 
 .battle-txt h2
 {
-  font-size: 32px;
+  font-size: 50px;
+  letter-spacing: 1.5px;
 }
+
+.battle-txt p
+{
+  font-size: 25px;
+  margin: 0;
+}
+
+.battle-pic img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/*Game Battle*/
+
+
+
+/*Power Up*/
+.power-up
+{
+  width: 85%;
+  margin: 70px auto;
+  text-align: center;
+  font-family: DotGothic16;
+  letter-spacing: 1.5px;
+}
+
+.power-up-title
+{
+font-size: 50px;
+margin: 20px;
+}
+
+.power-up-grid
+{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.power-up-box
+{
+  border: solid 5px #0691E7;
+  border-radius: 30px;
+  padding: 10px;
+  background: none;
+  text-align: center;
+}
+
+.power-up-icon
+{
+  width: 50%;
+  height: auto;
+  border: none #000000;
+  border-radius: 12px;
+}
+
+.power-up-name
+{
+  font-size: 30px;
+}
+.power-up-txt
+{
+  margin: 0;
+  font-size: 20px;
+}
+/*Power Up*/
