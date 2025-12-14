@@ -2,7 +2,7 @@
 
 html, body 
 {
-  background: #FFF915;
+  background: #FDE92F;
 }
 
 /*Top Video Intro*/
@@ -44,7 +44,7 @@ html, body
 .top-cta-txt{
   color: #000;
   font-family: "DotGothic16", sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
 }
 
@@ -72,10 +72,17 @@ html, body
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: stretch;
-  border: solid 5px #0691E7;
+  border: solid 5px #000000;
   border-radius: 30px;
   color: #000000;
   overflow: hidden;
+}
+
+.battle-txt h2
+{
+  font-size: 50px;
+  letter-spacing: 1.5px;
+  color: rgb(0, 0, 0);
 }
 
 .battle-txt
@@ -85,18 +92,8 @@ html, body
   flex-direction: column;
   justify-content: center;
   font-family: DotGothic16;
-}
-
-.battle-txt h2
-{
-  font-size: 50px;
-  letter-spacing: 1.5px;
-}
-
-.battle-txt p
-{
-  font-size: 25px;
-  margin: 0;
+  color: rgb(0, 0, 0);
+   font-size: 20px;
 }
 
 .battle-pic img
@@ -107,7 +104,6 @@ html, body
   display: block;
 }
 /*Game Battle*/
-
 
 
 /*Power Up*/
@@ -126,16 +122,21 @@ font-size: 50px;
 margin: 20px;
 }
 
+.power-up-title-txt
+{
+  font-size: 20px;
+}
+
 .power-up-grid
 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
 .power-up-box
 {
-  border: solid 5px #0691E7;
+  border: solid 5px #000000;
   border-radius: 30px;
   padding: 10px;
   background: none;
@@ -156,7 +157,79 @@ margin: 20px;
 }
 .power-up-txt
 {
-  margin: 0;
   font-size: 20px;
 }
 /*Power Up*/
+
+
+
+/*Costumes*/
+.costumes
+{
+  width: 85%;
+  margin: 70px auto;
+  text-align: center;
+  font-family: DotGothic16;
+}
+
+.costumes-title
+{
+  font-size: 50px;
+  letter-spacing: 1.5px;
+}
+
+.costumes-title-txt
+{
+  font-size: 20px;
+}
+
+.pacman-top img
+{
+width: 100%;
+max-width: 320px;
+filter:drop-shadow(0 15px 4px rgba(0, 0, 0, 0.55))
+}
+
+.costumes-grid
+{
+  display: grid;
+  gap: 20px;
+  max-width: calc(3*260px + 2 * 100px);
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+}
+
+.costumes-box
+{
+  text-align: center;
+}
+
+.costumes-circle
+{
+  width: 240px;
+  height: 240px;
+  margin: 0 auto 10px;
+  border-radius: 999px;
+  border: 5px solid black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.costumes-circle img
+{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.costume-name
+{
+  margin:0;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+  
