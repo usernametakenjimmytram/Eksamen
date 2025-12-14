@@ -3,9 +3,38 @@ html, body
   background: #FDE92F;
 }
 
+<<<<<<< Updated upstream
 
 /*top part*/
 .intro
+=======
+/*Top Bandai Namco*/
+.top-bar
+{
+  width: 100%;
+  background: #f5f5f5;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Top Bandai Namco*/
+
+
+.bandai
+{
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+
+
+/*Top Video Intro*/
+.top-video
+>>>>>>> Stashed changes
 {
   width: 83%;
   margin: auto;
@@ -59,16 +88,35 @@ html, body
   height: auto;
   width: 87%;
   display: block;
+<<<<<<< Updated upstream
 } 
 /*top part*/
+=======
+}
+
+.scroll img
+{
+  height: 50px;
+  width: auto;
+  margin: 10px;
+}
+/*Top CTA*/
+>>>>>>> Stashed changes
 
 
 .battle
 {
+<<<<<<< Updated upstream
   width: 83%;
   margin: auto;
   display: grid;
   gap: 10px;
+=======
+  width: 80%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px,1fr));
+>>>>>>> Stashed changes
   align-items: stretch;
 }
 
@@ -80,9 +128,380 @@ html, body
   display: flex;
   flex-direction: column;
   justify-content: center;
+<<<<<<< Updated upstream
+=======
+  font-family: DotGothic16;
+  color: rgb(0, 0, 0);
+   font-size: 30px;
+>>>>>>> Stashed changes
 }
 
 .battle-txt h2
 {
   font-size: 32px;
 }
+<<<<<<< Updated upstream
+=======
+/*Game Battle*/
+
+
+/*Power Up*/
+.power-up
+{
+  width: 85%;
+  margin: 100px auto;
+  text-align: center;
+  font-family: DotGothic16;
+  letter-spacing: 1.5px;
+}
+
+.power-up-title
+{
+font-size: 50px;
+margin: 20px;
+}
+
+.power-up-title-txt
+{
+  font-size: 30px;
+}
+
+.power-up-grid
+{
+  display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.power-up-box
+{
+  border: solid 5px #000000;
+  border-radius: 30px;
+  padding: 10px;
+  background: none;
+  text-align: center;
+}
+
+.power-up-icon
+{
+  width: 50%;
+  height: auto;
+  border: none #000000;
+  border-radius: 12px;
+}
+
+.power-up-name
+{
+  font-size: 40px;
+}
+.power-up-txt
+{
+  font-size: 30px;
+}
+/*Power Up*/
+
+
+
+/*Costumes*/
+.costumes
+{
+  width: 85%;
+  margin: 100px auto;
+  text-align: center;
+  font-family: DotGothic16;
+}
+
+.costumes-title
+{
+  font-size: 50px;
+  letter-spacing: 1.5px;
+}
+
+.costumes-title-txt
+{
+  font-size: 30px;
+}
+
+.costumes-grid
+{
+  display: grid;
+  gap: 20px;
+  max-width: calc(3*260px + 2 * 100px);
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+}
+
+.costumes-box
+{
+  text-align: center;
+}
+
+.costumes-circle
+{
+  width: 240px;
+  height: 240px;
+  margin: 0 auto 10px;
+  border-radius: 999px;
+  border: 5px solid black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.costumes-circle img
+{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.costume-name
+{
+  margin:0;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+/*Costumes*/
+
+
+
+/*Leaderboard*/
+.leaderboard
+{
+  width: 85%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
+  align-items: stretch;
+  font-family: DotGothic16;
+ border: solid 5px #000000;
+ border-radius: 30px;
+ overflow: hidden;
+
+}
+
+.leaderboard-pic img
+{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.leaderboard-txt
+{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leaderboard-txt h2
+{
+  font-size: 50px;
+  letter-spacing: 1.5px;
+}
+
+.leaderboard-txt p
+{
+  font-size: 30px;
+  margin: 0;
+}
+/*Leaderboard*/
+
+
+
+/*Season*/
+.season
+{
+  width: 100%;
+  margin: 100px 0;
+}
+
+.season-pic
+{
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: auto;
+  border: solid 5px black;
+  border-radius: 30px;
+}
+
+.season-txt
+{
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  font-family: DotGothic16;
+}
+
+
+
+.season-txt h2
+{
+  font-size: 50px;
+  margin: 30px;
+}
+
+.season-txt p
+{
+  font-size: 30px;
+  margin: 30px ;
+}
+/*Season*/
+
+
+
+/*Desire*/
+.desire{
+  width: 85%;
+  margin: 100px auto;
+  font-family: DotGothic16;
+  text-align: center;
+ 
+}
+
+.desire-title{
+  font-size: 50px;
+  letter-spacing: 1.5px;
+  margin: 25px;
+}
+
+.desire-pic img{
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+  display: block;
+  margin: auto;
+  filter: drop-shadow(0 20px 10px rgba(0,0,0,.75));
+}
+
+.desire p
+{
+  font-size: 30px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+/*Desire*/
+
+/*Bottom CTA*/
+.bottom-cta
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: DotGothic16;
+}
+
+.bottom-cta-box 
+{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.bottom-cta-logo
+{
+  width: 50%;
+  height: auto;
+  display: block;
+}
+
+.bottom-cta-title
+{
+  width: 30%;
+  font-size: 50px;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+.bottom-cta-txt
+{
+  width: 50%;
+  font-size: 30px;
+  margin: 0;
+}
+
+.bottom-cta-download
+{
+  display:flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.bottom-cta-badge
+{
+  height: 58px;
+  width: auto;
+  display: block;
+}
+/*Bottom CTA*/
+
+
+
+/*Bottom Namco Bandai*/
+.bottom-bandai
+{
+  width: 100%;
+  background: #f5f5f5;
+  padding: 20px;
+  margin-top: 200px;
+  border: solid 2px red;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bottom-bandai-box
+{
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom-bandai-links
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.bottom-bandai-links a
+{
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
+
+.bottom-bandai-links a:hover
+{
+  text-decoration: underline;
+  color: red;
+  transition: 0.3s;
+}
+
+.bottom-bandai-logo
+{
+  height: 50px;
+  width: auto;
+}
+
+.bottom-bandai-cpr
+{
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  color: #000;
+}
+>>>>>>> Stashed changes
