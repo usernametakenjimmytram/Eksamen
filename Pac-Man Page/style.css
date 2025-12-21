@@ -1,147 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
 html, body 
 {
   background: #FDE92F;
+  margin: 0;
+  padding: 0;
 }
 
-<<<<<<< Updated upstream
-
-/*top part*/
-.intro
-=======
 /*Top Bandai Namco*/
-.top-bar
-{
+.top-bar {
   width: 100%;
-  background: #f5f5f5;
-  height: 50px;
+  height: 70px;        
+  background: #f5f5f5;      
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 2px red;
-  font-family: Arial, Helvetica, sans-serif;
-}
-/*Top Bandai Namco*/
+  overflow: hidden;
+  box-sizing: border-box;
+  gap: 20px;
+  } 
 
+  .top-bar-logo {
+  height: 42px;          
+  width: auto;
+  max-width: 90%;
+  display: block;
+  }
 
-.bandai
-{
-  height: 40px;
+  .top-bar-royale-logo 
+  {
+  height: 42px;
   width: auto;
   display: block;
-}
-
+  filter:drop-shadow(.33px .33px .75px black);
+  }
+/*Top Bandai Namco*/
 
 
 /*Top Video Intro*/
 .top-video
->>>>>>> Stashed changes
 {
-  width: 83%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative; 
-}
-
-
-.intro-pic{
   width: 100%;
-  height: auto;
-  display: block;
-  border:solid;
-  border-color: #02509A;
-}
-.intro-vid{
-  position: absolute;
-  top: 15%;
-  left: 4.5%;
-  width: 40%;
-}
-.vid{
-  aspect-ratio: 16 / 9;
-  position: relative;
+  background: #000;
 }
 
-.vid iframe{
-  position: absolute;
-  inset: 0;
+
+
+.top-video-frame
+{
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.top-video-frame iframe
+{
   width: 100%;
   height: 100%;
-  border: solid;
-  border-color: #02509A;
+  position: absolute;
+  inset: 0;
+  
+}
+/*Top Video Intro*/
 
+
+
+/*Top CTA*/
+.top-cta
+{
+  background-color: none;
+  text-align: center;
+  margin: 70px auto;
+}
+
+.top-cta-txt{
+  color: #ED0101;
+  font-family: "DotGothic16";
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.scroll 
+{
+  width: 40px;
+  height: auto;
+  display: block;
+  margin: -55px auto 0; 
+}
+
+.top-cta-badges{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 
 
-.store{
-  position:absolute;
-  left: 55%;
-  bottom: 2%;
- display: flex;
- align-items: center;
- gap: 1%;
+.top-cta-badges a:hover .badge
+{
+  transform: scale(1.05);
+  filter:drop-shadow(10px 10px 20px black);
+  transition: 0.2s;
 }
 
+.top-cta-badges a:active .badge
+{
+  transform: scale(0.98);
+  filter: drop-shadow(2px 2px 8px black);
+  transition: 0.2s;
+}
 
 .badge{
-  height: auto;
-  width: 87%;
-  display: block;
-<<<<<<< Updated upstream
-} 
-/*top part*/
-=======
-}
-
-.scroll img
-{
-  height: 50px;
+  height:75px;
   width: auto;
-  margin: 10px;
+  display: block;
+
 }
 /*Top CTA*/
->>>>>>> Stashed changes
 
 
+
+/*Game Battle*/
 .battle
 {
-<<<<<<< Updated upstream
-  width: 83%;
-  margin: auto;
+  width: 85%;
+  margin: 70px auto;
   display: grid;
-  gap: 10px;
-=======
-  width: 80%;
-  margin: 100px auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px,1fr));
->>>>>>> Stashed changes
+  grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
   align-items: stretch;
+  border: solid 2.5px #000000;
+  border-radius: 30px;
+  color: #000000;
+  overflow: hidden;
+}
+
+.battle h2
+{
+  font-size: 50px;
+  letter-spacing: 1.5px;
+  color: rgb(0, 0, 0);
+  margin: 0 0 12px 0;
 }
 
 .battle-txt
 {
-  background: #02509A;
-  color: #fff;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-<<<<<<< Updated upstream
-=======
   font-family: DotGothic16;
   color: rgb(0, 0, 0);
-   font-size: 30px;
->>>>>>> Stashed changes
+  font-size: 25px;
 }
 
-.battle-txt h2
+.battle-pic img
 {
-  font-size: 32px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
-<<<<<<< Updated upstream
-=======
 /*Game Battle*/
 
 
@@ -149,7 +169,7 @@ html, body
 .power-up
 {
   width: 85%;
-  margin: 100px auto;
+  margin: 70px auto;
   text-align: center;
   font-family: DotGothic16;
   letter-spacing: 1.5px;
@@ -158,12 +178,13 @@ html, body
 .power-up-title
 {
 font-size: 50px;
-margin: 20px;
+margin-top: 70px;
+margin-bottom: -10px;
 }
 
 .power-up-title-txt
 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .power-up-grid
@@ -175,9 +196,9 @@ margin: 20px;
 
 .power-up-box
 {
-  border: solid 5px #000000;
+  border: solid 2.5px #000000;
   border-radius: 30px;
-  padding: 10px;
+  padding: 20px;
   background: none;
   text-align: center;
 }
@@ -186,7 +207,7 @@ margin: 20px;
 {
   width: 50%;
   height: auto;
-  border: none #000000;
+  border: none;
   border-radius: 12px;
 }
 
@@ -196,7 +217,7 @@ margin: 20px;
 }
 .power-up-txt
 {
-  font-size: 30px;
+  font-size: 25px;
 }
 /*Power Up*/
 
@@ -206,7 +227,7 @@ margin: 20px;
 .costumes
 {
   width: 85%;
-  margin: 100px auto;
+  margin: 70px auto;
   text-align: center;
   font-family: DotGothic16;
 }
@@ -215,11 +236,19 @@ margin: 20px;
 {
   font-size: 50px;
   letter-spacing: 1.5px;
+  margin-bottom: -10px;
 }
 
 .costumes-title-txt
 {
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.pacman-top img
+{
+width: 100%;
+max-width: 320px;
+filter:drop-shadow(0 15px 4px rgba(0, 0, 0, 0.55))
 }
 
 .costumes-grid
@@ -228,7 +257,7 @@ margin: 20px;
   gap: 20px;
   max-width: calc(3*260px + 2 * 100px);
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
 }
 
@@ -243,7 +272,7 @@ margin: 20px;
   height: 240px;
   margin: 0 auto 10px;
   border-radius: 999px;
-  border: 5px solid black;
+  border: 2.5px solid black;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -260,54 +289,55 @@ margin: 20px;
 .costume-name
 {
   margin:0;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 25px;
+  letter-spacing: 1.5px;
 }
-/*Costumes*/
+
+  
 
 
 
 /*Leaderboard*/
 .leaderboard
 {
-  width: 85%;
-  margin: 100px auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
-  align-items: stretch;
-  font-family: DotGothic16;
- border: solid 5px #000000;
- border-radius: 30px;
- overflow: hidden;
+width: 85%;
+margin: 70px auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
+align-items: stretch;
+font-family: DotGothic16;
+border: solid 2.5px #000000;
+border-radius: 30px;
+overflow: hidden;
 
 }
 
 .leaderboard-pic img
 {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
+width: 100%;
+height: 100%;
+display: block;
+object-fit: cover;
 }
 
 .leaderboard-txt
 {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
 .leaderboard-txt h2
 {
-  font-size: 50px;
-  letter-spacing: 1.5px;
+font-size: 50px;
+letter-spacing: 1.5px;
+margin: 0 0 12px 0;
 }
 
 .leaderboard-txt p
 {
-  font-size: 30px;
-  margin: 0;
+  font-size: 25px;
 }
 /*Leaderboard*/
 
@@ -316,8 +346,8 @@ margin: 20px;
 /*Season*/
 .season
 {
-  width: 100%;
-  margin: 100px 0;
+width: 100%;
+margin: 70px auto;
 }
 
 .season-pic
@@ -326,8 +356,9 @@ margin: 20px;
   height: auto;
   display: block;
   margin: auto;
-  border: solid 5px black;
+  border: solid 2.5px black;
   border-radius: 30px;
+  min-width: 380px;
 }
 
 .season-txt
@@ -343,13 +374,12 @@ margin: 20px;
 .season-txt h2
 {
   font-size: 50px;
-  margin: 30px;
+  margin: 10px;
 }
 
 .season-txt p
 {
-  font-size: 30px;
-  margin: 30px ;
+  font-size: 25px;
 }
 /*Season*/
 
@@ -358,7 +388,7 @@ margin: 20px;
 /*Desire*/
 .desire{
   width: 85%;
-  margin: 100px auto;
+  margin: 70px auto;
   font-family: DotGothic16;
   text-align: center;
  
@@ -367,13 +397,13 @@ margin: 20px;
 .desire-title{
   font-size: 50px;
   letter-spacing: 1.5px;
-  margin: 25px;
+  margin: 10px;
 }
 
 .desire-pic img{
   width: 100%;
   height: auto;
-  max-width: 450px;
+  max-width: 350px;
   display: block;
   margin: auto;
   filter: drop-shadow(0 20px 10px rgba(0,0,0,.75));
@@ -381,8 +411,8 @@ margin: 20px;
 
 .desire p
 {
-  font-size: 30px;
-  margin: 20px auto;
+  font-size: 25px;
+  margin: 30px auto;
   max-width: 900px;
 }
 /*Desire*/
@@ -419,12 +449,13 @@ margin: 20px;
   font-size: 50px;
   letter-spacing: 1.5px;
   margin: 0;
+  color: #ED0101;
 }
 
 .bottom-cta-txt
 {
   width: 50%;
-  font-size: 30px;
+  font-size: 25px;
   margin: 0;
 }
 
@@ -432,7 +463,7 @@ margin: 20px;
 {
   display:flex;
   justify-content: center;
-  gap: 15px;
+  gap: 30px;
 }
 
 .bottom-cta-badge
@@ -440,6 +471,21 @@ margin: 20px;
   height: 58px;
   width: auto;
   display: block;
+  flex-wrap: wrap;
+}
+
+.bottom-cta-download a:hover .bottom-cta-badge
+{
+  transform: scale(1.05);
+  filter: drop-shadow(10px 10px 20px black);
+  transition: 0.2s;
+}
+
+.bottom-cta-download a:active .bottom-cta-badge
+{
+  transform: scale(0.98);
+  filter: drop-shadow(2px 2px 8px black);
+  transition: 0.2s;
 }
 /*Bottom CTA*/
 
@@ -452,7 +498,6 @@ margin: 20px;
   background: #f5f5f5;
   padding: 20px;
   margin-top: 200px;
-  border: solid 2px red;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -504,4 +549,4 @@ margin: 20px;
   letter-spacing: 0.3px;
   color: #000;
 }
->>>>>>> Stashed changes
+/*Bottom Namco Bandai*/
